@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="hu" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Téglás Levente Fogászat | Szob</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Poppins & Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#eef8ff',
+                            100: '#d9f0ff',
+                            200: '#bce4ff',
+                            300: '#8ed2ff',
+                            400: '#56b8ff',
+                            500: '#2b9bff',
+                            600: '#0c7ae6',
+                            700: '#0062c4',
+                            800: '#07509f',
+                            900: '#0d437f',
+                            950: '#082a52',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased font-sans">
+
+    <!-- Top Info Bar -->
+    <div class="bg-brand-950 text-brand-100 text-xs py-2.5 px-4 border-b border-brand-900">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex flex-wrap items-center justify-center sm:justify-start gap-4 sm:gap-6">
+                <span class="flex items-center"><i class="fa-solid fa-location-dot text-brand-400 mr-1.5"></i> 2630 Szob, Fő utca 12. (Kényelmes parkolás)</span>
+                <span class="flex items-center"><i class="fa-regular fa-clock text-brand-400 mr-1.5"></i> H-Cs: 08:00 - 17:00 | P: 08:00 - 14:00</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="tel:+36301234567" class="hover:text-white font-semibold transition-colors flex items-center">
+                    <i class="fa-solid fa-phone text-brand-400 mr-1.5"></i> +36 30 123 4567
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm transition-all duration-300">
+                    <a href="#szolgaltatasok" class="text-sm font-medium text-slate-600 hover:text-brand-600 transition-colors">Szolgáltatások</a>
+                    <a href="#rolunk" class="text-sm font-medium text-slate-600 hover:text-brand-600 transition-colors">Rólunk</a>
+                    <a href="#elerhetoseg" class="text-sm font-medium text-slate-600 hover:text-brand-600 transition-colors">Elérhetőség</a>
+                    <a href="#idopont" class="inline-flex items-center justify-center px-5 py-2.5 rounded-xl bg-brand-600 text-white text-sm font-semibold shadow-lg shadow-brand-600/25 hover:bg-brand-700 hover:shadow-brand-700/30 transition-all transform hover:-translate-y-0.5">
+                        <i class="fa-regular fa-calendar-check mr-2"></i> Időpontfoglalás
+                    </a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2.5 rounded-xl text-slate-600 hover:bg-slate-100 focus:outline-none">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-100 px-4 pt-2 pb-6 space-y-3 shadow-xl">
+            <a href="#szolgaltatasok" class="block px-3 py-2 rounded-lg text-base font-medium text-slate-700 hover:bg-brand-50 hover:text-brand-600">Szolgáltatások</a>
+            <a href="#rolunk" class="block px-3 py-2 rounded-lg text-base font-medium text-slate-700 hover:bg-brand-50 hover:text-brand-600">Rólunk</a>
+            <a href="#elerhetoseg" class="block px-3 py-2 rounded-lg text-base font-medium text-slate-700 hover:bg-brand-50 hover:text-brand-600">Elérhetőség</a>
+            <a href="#idopont" class="block text-center px-4 py-3 rounded-xl bg-brand-600 text-white font-semibold shadow-md shadow-brand-600/30">Időpontfoglalás</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden bg-gradient-to-b from-brand-50/70 via-white to-slate-50 pt-16 pb-24 lg:pt-24 lg:pb-32">
+        <!-- Background Decorative Elements -->
+        <div class="absolute top-0 right-0 -translate-y-12 translate-x-1/3 w-96 h-96 bg-brand-200/40 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 translate-y-12 -translate-x-1/3 w-96 h-96 bg-brand-100/60 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                
+                <!-- Left Text Column -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-100 text-brand-700 text-xs font-semibold tracking-wide uppercase">
+                        <i class="fa-solid fa-location-dot"></i> Szobi fogászati rendelő
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.15]">
+                        Mosolyogjon magabiztosan <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-brand-400">Szobon!</span>
+                    </h1>
+                    <p class="text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                        Prémium fogászati ellátás modern környezetben, fájdalommentes kezelésekkel és barátságos légkörben. Dr. Téglás Levente várja Önt szeretettel.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#idopont" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 rounded-2xl bg-brand-600 text-white font-semibold shadow-xl shadow-brand-600/30 hover:bg-brand-700 hover:shadow-brand-700/40 transition-all text-base transform hover:-translate-y-0.5">
+                            <i class="fa-regular fa-calendar-days mr-2.5 text-lg"></i> Ingyenes időpontfoglalás
+                        </a>
+                        <a href="#szolgaltatasok" class="w-full sm:w-auto inline-flex items-center justify-center px-7 py-4 rounded-2xl bg-white text-slate-700 border border-slate-200 font-semibold hover:bg-slate-50 hover:border-slate-300 transition-all text-base shadow-sm">
+                            Szolgáltatások <i class="fa-solid fa-arrow-right ml-2 text-slate-400"></i>
+                        </a>
+                    </div>
+
+                    <!-- Trust Indicators -->
+                    <div class="pt-8 border-t border-slate-200/80 grid grid-cols-3 gap-4 max-w-lg mx-auto lg:mx-0 text-left">
+                        <div>
+                            <span class="block text-2xl font-bold text-slate-900">100%</span>
+                            <span class="text-xs text-slate-500 font-medium">Fájdalommentes</span>
+                        </div>
+                        <div>
+                            <span class="block text-2xl font-bold text-slate-900">Modern</span>
+                            <span class="text-xs text-slate-500 font-medium">Diagnosztika</span>
+                        </div>
+                        <div>
+                            <span class="block text-2xl font-bold text-slate-900">Garancia</span>
+                            <span class="text-xs text-slate-500 font-medium">Minőségi anyagok</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Hero Card / Visual -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <!-- Main Card -->
+                        <div class="glass-card rounded-3xl p-6 sm:p-8 shadow-2xl shadow-brand-900/10 border border-white/80 relative z-10">
+                            <div class="flex items-center justify-between mb-6">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-12 h-12 rounded-2xl bg-brand-600 text-white flex items-center justify-center shadow-md shadow-brand-600/30">
+                                        <i class="fa-solid fa-user-doctor text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-bold text-slate-900 text-lg">Dr. Téglás Levente</h3>
+                                        <p class="text-xs text-brand-600 font-semibold">Fogszakorvos</p>
+                                    </div>
+                                </div>
+                                <span class="inline-flex items-center px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-600 text-xs font-semibold">
+                                    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse mr-1.5"></span> Nyitva ma
+                                </span>
+                            </div>
+
+                            <div class="space-y-4 mb-6">
+                                <div class="p-4 rounded-2xl bg-brand-50/70 border border-brand-100 flex items-start gap-3">
+                                    <i class="fa-solid fa-calendar-check text-brand-600 mt-1 text-lg"></i>
+                                    <div>
+                                        <h4 class="text-sm font-semibold text-slate-900">Gyors online foglalás</h4>
+                                        <p class="text-xs text-slate-600 mt-0.5">Válassza ki az Önnek megfelelő időpontot pár kattintással.</p>
+                                    </div>
+                                </div>
+
+                                <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100 flex items-start gap-3">
+                                    <i class="fa-solid fa-phone-volume text-brand-600 mt-1 text-lg"></i>
+                                    <div>
+                                        <h4 class="text-sm font-semibold text-slate-900">Közvetlen elérhetőség</h4>
+                                        <p class="text-xs text-slate-600 mt-0.5">+36 30 123 4567 • Szob, Fő utca 12.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="#idopont" class="block w-full text-center py-3.5 px-4 rounded-xl bg-slate-900 text-white font-semibold text-sm hover:bg-brand-600 transition-colors shadow-lg">
+                                Időpontot foglalok most
+                            </a>
+                        </div>
+
+                        <!-- Floating Accent Card -->
+                        <div class="absolute -bottom-6 -left-6 z-20 hidden sm:block bg-white rounded-2xl p-4 shadow-xl border border-slate-100">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-500 flex items-center justify-center font-bold">
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div>
+                                    <div class="flex items-center text-amber-400 text-xs">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="text-xs font-bold text-slate-800 mt-0.5">Pácienseink véleménye alapján</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="szolgaltatasok" class="py-24 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-600 text-sm font-bold uppercase tracking-wider mb-2 block">Prémium ellátások</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Milyen fogászati kezeléssel segíthetünk?</h2>
+                <p class="text-slate-600 mt-4 text-base sm:text-lg">A legmodernebb technológiával és maximális odafigyeléssel végzett fogászati szolgáltatások Szobon.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service 1: Esztétikai fogászat -->
+                <div class="group bg-slate-50 rounded-3xl p-8 border border-slate-100 hover:border-brand-200 hover:bg-brand-50/40 transition-all duration-300 hover:shadow-xl hover:shadow-brand-600/5 flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-brand-100 text-brand-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors shadow-sm">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-brand-700 transition-colors">Esztétikai fogászat</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            Fényre kötő, láthatatlan fogszínű kompozit tömések, professzionális rendelői fogfehérítés és kerámia héjak a természetes, ragyogó mosolyért.
+                        </p>
+                    </div>
+                    <a href="#idopont" onclick="preselectService('Esztétikai fogászat')" class="inline-flex items-center text-sm font-semibold text-brand-600 group-hover:text-brand-700">
+                        Időpontot választok <i class="fa-solid fa-arrow-right ml-2 text-xs group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+
+                <!-- Service 2: Konzerváló kezelések -->
+                <div class="group bg-slate-50 rounded-3xl p-8 border border-slate-100 hover:border-brand-200 hover:bg-brand-50/40 transition-all duration-300 hover:shadow-xl hover:shadow-brand-600/5 flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-brand-100 text-brand-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors shadow-sm">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-brand-700 transition-colors">Konzerváló kezelések</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            Alapos állapotfelmérés, fájdalommentes helyi érzéstelenítés, modern gépi gyökérkezelés és fogmegőrző beavatkozások a saját fogak védelmében.
+                        </p>
+                    </div>
+                    <a href="#idopont" onclick="preselectService('Konzerváló kezelések')" class="inline-flex items-center text-sm font-semibold text-brand-600 group-hover:text-brand-700">
+                        Időpontot választok <i class="fa-solid fa-arrow-right ml-2 text-xs group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+
+                <!-- Service 3: Fogpótlások és szájhigiénia -->
+                <div class="group bg-slate-50 rounded-3xl p-8 border border-slate-100 hover:border-brand-200 hover:bg-brand-50/40 transition-all duration-300 hover:shadow-xl hover:shadow-brand-600/5 flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-brand-100 text-brand-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors shadow-sm">
+                            <i class="fa-solid fa-crown"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-brand-700 transition-colors">Fogpótlások és szájhigiénia</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            Magas esztétikájú cirkon és fémkerámia koronák, hidak, kivehető pótlások, valamint kíméletes ultrahangos fogkőeltávolítás és polírozás.
+                        </p>
+                    </div>
+                    <a href="#idopont" onclick="preselectService('Fogpótlások és szájhigiénia')" class="inline-flex items-center text-sm font-semibold text-brand-600 group-hover:text-brand-700">
+                        Időpontot választok <i class="fa-solid fa-arrow-right ml-2 text-xs group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="rolunk" class="py-24 bg-gradient-to-b from-slate-50 to-brand-50/40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="text-brand-600 text-sm font-bold uppercase tracking-wider block">Miért válasszon minket?</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Szakértelem és odafigyelés Szob szívében</h2>
+                    <p class="text-slate-600 text-base leading-relaxed">
+                        Célunk, hogy a fogorvosi kezelés ne stresszforrás, hanem egy kellemes élmény legyen. Dr. Téglás Levente modern felszereltségű szobi rendelőjében türelemmel, empátiával és a legmagasabb szakmai színvonalon várja pácienseit.
+                    </p>
+
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-brand-600 text-white flex items-center justify-center shrink-0 shadow-md shadow-brand-600/20">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Fájdalommentes eljárások</h4>
+                                <p class="text-sm text-slate-600 mt-0.5">Korszerű érzéstelenítési technikák a teljesen stresszmentes kezelésekért.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-brand-600 text-white flex items-center justify-center shrink-0 shadow-md shadow-brand-600/20">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Prémium anyagok és eszközök</h4>
+                                <p class="text-sm text-slate-600 mt-0.5">Csak tartós és esztétikus alapanyagokkal dolgozunk a hosszú távú eredményért.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-brand-600 text-white flex items-center justify-center shrink-0 shadow-md shadow-brand-600/20">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Rugalmas időpontok Szobon</h4>
+                                <p class="text-sm text-slate-600 mt-0.5">Könnyen megközelíthető helyszín, várakozás nélküli pontos kezdés.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6">
+                    <div class="bg-white rounded-3xl p-8 sm:p-10 shadow-xl border border-slate-100 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-brand-100/50 rounded-full blur-2xl pointer-events-none"></div>
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-16 h-16 rounded-2xl bg-brand-600 text-white flex items-center justify-center text-3xl shadow-lg shadow-brand-600/30">
+                                <i class="fa-solid fa-user-doctor"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-slate-900">Dr. Téglás Levente</h3>
+                                <p class="text-brand-600 font-semibold text-sm">Alapító fogszakorvos</p>
+                            </div>
+                        </div>
+                        <p class="text-slate-600 text-base leading-relaxed mb-6">
+                            „Fontos számomra, hogy minden páciensem biztonságban érezze magát a székben. Részletesen elmagyarázom a kezelési lépéseket, és a legkíméletesebb utat választjuk a tökéletes mosoly eléréséhez.”
+                        </p>
+                        <div class="pt-6 border-t border-slate-100 flex items-center justify-between text-sm text-slate-500">
+                            <span><i class="fa-solid fa-graduation-cap text-brand-600 mr-2"></i> Semmelweis Egyetem</span>
+                            <span><i class="fa-solid fa-shield text-brand-600 mr-2"></i> Hivatalos garancia</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Booking Section -->
+    <section id="idopont" class="py-24 bg-white relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-brand-600 text-sm font-bold uppercase tracking-wider mb-2 block">Gyors & Egyszerű</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Online Időpontfoglalás</h2>
+                <p class="text-slate-600 mt-3 text-base">Foglaljon időpontot online 3 egyszerű lépésben.</p>
+            </div>
+
+            <!-- Booking Widget Card -->
+            <div class="bg-slate-50 rounded-3xl p-6 sm:p-10 border border-slate-200/80 shadow-2xl relative">
+                
+                <!-- Steps Progress Indicator -->
+                <div class="flex items-center justify-between mb-8 pb-8 border-b border-slate-200 max-w-xl mx-auto">
+                    <div class="flex items-center gap-2 text-brand-600 font-semibold text-sm">
+                        <div id="step-indicator-1" class="w-8 h-8 rounded-full bg-brand-600 text-white flex items-center justify-center font-bold text-xs">1</div>
+                        <span class="hidden sm:inline">Szolgáltatás</span>
+                    </div>
+                    <div class="w-12 h-0.5 bg-slate-200" id="line-1"></div>
+                    <div class="flex items-center gap-2 text-slate-400 font-semibold text-sm" id="step-label-2">
+                        <div id="step-indicator-2" class="w-8 h-8 rounded-full bg-slate-200 text-slate-600 flex items-center justify-center font-bold text-xs">2</div>
+                        <span class="hidden sm:inline">Időpont</span>
+                    </div>
+                    <div class="w-12 h-0.5 bg-slate-200" id="line-2"></div>
+                    <div class="flex items-center gap-2 text-slate-400 font-semibold text-sm" id="step-label-3">
+                        <div id="step-indicator-3" class="w-8 h-8 rounded-full bg-slate-200 text-slate-600 flex items-center justify-center font-bold text-xs">3</div>
+                        <span class="hidden sm:inline">Adatok</span>
+                    </div>
+                </div>
+
+                <!-- Booking Form / Steps Form -->
+                <form id="booking-form" onsubmit="handleBookingSubmit(event)">
+                    
+                    <!-- STEP 1: Select Service -->
+                    <div id="step-1-content" class="space-y-6">
+                        <h3 class="text-lg font-bold text-slate-900">1. Válassza ki a kívánt kezeléstípust:</h3>
+                        
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <label class="cursor-pointer">
+                                <input type="radio" name="service" value="Állapotfelmérés és konzultáció" class="peer sr-only" checked>
+                                <div class="p-5 rounded-2xl bg-white border-2 border-slate-200 peer-checked:border-brand-600 peer-checked:bg-brand-50/50 hover:border-slate-300 transition-all shadow-sm h-full">
+                                    <h4 class="font-bold text-slate-900 text-base">Állapotfelmérés & Konzultáció</h4>
+                                    <p class="text-xs text-slate-500 mt-1">Alapos vizsgálat és személyre szabott kezelési terv</p>
+                                    <span class="inline-block mt-3 text-xs font-semibold text-brand-600">30 perc</span>
+                                </div>
+                            </label>
+
+                            <label class="cursor-pointer">
+                                <input type="radio" name="service" value="Esztétikai fogászat" class="peer sr-only">
+                                <div class="p-5 rounded-2xl bg-white border-2 border-slate-200 peer-checked:border-brand-600 peer-checked:bg-brand-50/50 hover:border-slate-300 transition-all shadow-sm h-full">
+                                    <h4 class="font-bold text-slate-900 text-base">Esztétikai fogászat</h4>
+                                    <p class="text-xs text-slate-500 mt-1">Fogszínű tömések, fogfehérítés és héjak</p>
+                                    <span class="inline-block mt-3 text-xs font-semibold text-brand-600">45 - 60 perc</span>
+                                </div>
+                            </label>
+
+                            <label class="cursor-pointer">
+                                <input type="radio" name="service" value="Konzerváló kezelések" class="peer sr-only">
+                                <div class="p-5 rounded-2xl bg-white border-2 border-slate-200 peer-checked:border-brand-600 peer-checked:bg-brand-50/50 hover:border-slate-300 transition-all shadow-sm h-full">
+                                    <h4 class="font-bold text-slate-900 text-base">Konzerváló kezelések</h4>
+                                    <p class="text-xs text-slate-500 mt-1">Fájdalommentes gyökérkezelés és fogmegőrzés</p>
+                                    <span class="inline-block mt-3 text-xs font-semibold text-brand-600">45 - 60 perc</span>
+                                </div>
+                            </label>
+
+                            <label class="cursor-pointer">
+                                <input type="radio" name="service" value="Fogpótlások és szájhigiénia" class="peer sr-only">
+                                <div class="p-5 rounded-2xl bg-white border-2 border-slate-200 peer-checked:border-brand-600 peer-checked:bg-brand-50/50 hover:border-slate-300 transition-all shadow-sm h-full">
+                                    <h4 class="font-bold text-slate-900 text-base">Fogpótlások és szájhigiénia</h4>
+                                    <p class="text-xs text-slate-500 mt-1">Koronák, hidak, ultrahangos fogkőeltávolítás</p>
+                                    <span class="inline-block mt-3 text-xs font-semibold text-brand-600">45 - 60 perc</span>
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="flex justify-end pt-4">
+                            <button type="button" onclick="nextStep(2)" class="px-8 py-3.5 rounded-xl bg-brand-600 text-white font-semibold text-sm hover:bg-brand-700 transition-all shadow-lg shadow-brand-600/30">
+                                Tovább az időpontválasztáshoz <i class="fa-solid fa-arrow-right ml-2"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- STEP 2: Date & Time Selection -->
+                    <div id="step-2-content" class="hidden space-y-6">
+                        <h3 class="text-lg font-bold text-slate-900">2. Válasszon dátumot és szabad idősávot:</h3>
+                        
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-600 uppercase tracking-wider mb-2">Dátum kiválasztása</label>
+                                <input type="date" id="booking-date" class="w-full px-4 py-3.5 rounded-xl bg-white border border-slate-200 focus:border-brand-600 focus:ring-2 focus:ring-brand-100 outline-none font-medium text-slate-800 shadow-sm" required>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-600 uppercase tracking-wider mb-2">Szabad idősávok</label>
+                                <div class="grid grid-cols-2 gap-2.5" id="time-slots-grid">
+                                    <label class="cursor-pointer">
+                                        <input type="radio" name="timeslot" value="08:30 - 09:30" class="peer sr-only">
+                                        <div class="py-2.5 px-3 rounded-xl bg-white border border-slate-200 text-center text-sm font-semibold text-slate-700 peer-checked:bg-brand-600 peer-checked:text-white peer-checked:border-brand-600 hover:border-brand-300 transition-all">08:30</div>
+                                    </label>
+                                    <label class="cursor-pointer">
+                                        <input type="radio" name="timeslot" value="10:00 - 11:00" class="peer sr-only">
+                                        <div class="py-2.5 px-3 rounded-xl bg-white border border-slate-200 text-center text-sm font-semibold text-slate-700 peer-checked:bg-brand-600 peer-checked:text-white peer-checked:border-brand-600 hover:border-brand-300 transition-all">10:00</div>
+                                    </label>
+                                    <label class="cursor-pointer">
+                                        <input type="radio" name="timeslot" value="11:30 - 12:30" class="peer sr-only">
+                                        <div class="py-2.5 px-3 rounded-xl bg-white border border-slate-200 text-center text-sm font-semibold text-slate-700 peer-checked:bg-brand-600 peer-checked:text-white peer-checked:border-brand-600 hover:border-brand-300 transition-all">11:30</div>
+                                    </label>
+                                    <label class="cursor-pointer">
+                                        <input type="radio" name="timeslot" value="13:30 - 14:30" class="peer sr-only">
+                                        <div class="py-2.5 px-3 rounded-xl bg-white border border-slate-200 text-center text-sm font-semibold text-slate-700 peer-checked:bg-brand-600 peer-checked:text-white peer-checked:border-brand-600 hover:border-brand-300 transition-all">13:30</div>
+                                    </label>
+                                    <label class="cursor-pointer">
+                                        <input type="radio" name="timeslot" value="15:00 - 16:00" class="peer sr-only">
+                                        <div class="py-2.5 px-3 rounded-xl bg-white border border-slate-200 text-center text-sm font-semibold text-slate-700 peer-checked:bg-brand-600 peer-checked:text-white peer-checked:border-brand-600 hover:border-brand-300 transition-all">15:00</div>
+                                    </label>
+                                    <label class="cursor-pointer">
+                                        <input type="radio" name="timeslot" value="16:00 - 17:00" class="peer sr-only">
+                                        <div class="py-2.5 px-3 rounded-xl bg-white border border-slate-200 text-center text-sm font-semibold text-slate-700 peer-checked:bg-brand-600 peer-checked:text-white peer-checked:border-brand-600 hover:border-brand-300 transition-all">16:00</div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-between pt-4">
+                            <button type="button" onclick="prevStep(1)" class="px-6 py-3.5 rounded-xl bg-white border border-slate-200 text-slate-700 font-semibold text-sm hover:bg-slate-50 transition-all">
+                                <i class="fa-solid fa-arrow-left mr-2"></i> Vissza
+                            </button>
+                            <button type="button" onclick="nextStep(3)" class="px-8 py-3.5 rounded-xl bg-brand-600 text-white font-semibold text-sm hover:bg-brand-700 transition-all shadow-lg shadow-brand-600/30">
+                                Tovább az adatokhoz <i class="fa-solid fa-arrow-right ml-2"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- STEP 3: Patient Info -->
+                    <div id="step-3-content" class="hidden space-y-6">
+                        <h3 class="text-lg font-bold text-slate-900">Adja meg elérhetőségeit:</h3>
+                        
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-600 uppercase tracking-wider mb-2">Teljes név *</label>
+                                <input type="text" id="patient-name" placeholder="Pl. Kovács Anna" class="w-full px-4 py-3.5 rounded-xl bg-white border border-slate-200 focus:border-brand-600 focus:ring-2 focus:ring-brand-100 outline-none font-medium text-slate-800 shadow-sm" required>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-600 uppercase tracking-wider mb-2">E-mail cím *</label>
+                                <input type="email" id="patient-email" placeholder="anna@pelda.hu" class="w-full px-4 py-3.5 rounded-xl bg-white border border-slate-200 focus:border-brand-600 focus:ring-2 focus:ring-brand-100 outline-none font-medium text-slate-800 shadow-sm" required>
+                            </div>
+                            <div class="sm:col-span-2">
+                                <label class="block text-xs font-semibold text-slate-600 uppercase tracking-wider mb-2">Telefonszám *</label>
+                                <input type="tel" id="patient-phone" placeholder="+36 30 123 4567" class="w-full px-4 py-3.5 rounded-xl bg-white border border-slate-200 focus:border-brand-600 focus:ring-2 focus:ring-brand-100 outline-none font-medium text-slate-800 shadow-sm" required>
+                            </div>
+                            <div class="sm:col-span-2">
+                                <label class="block text-xs font-semibold text-slate-600 uppercase tracking-wider mb-2">Megjegyzés (opcionális)</label>
+                                <textarea id="patient-note" rows="3" placeholder="Itt írhatja meg esetleges panaszait vagy kéréseit..." class="w-full px-4 py-3.5 rounded-xl bg-white border border-slate-200 focus:border-brand-600 focus:ring-2 focus:ring-brand-100 outline-none font-medium text-slate-800 shadow-sm"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-between pt-4">
+                            <button type="button" onclick="prevStep(2)" class="px-6 py-3.5 rounded-xl bg-white border border-slate-200 text-slate-700 font-semibold text-sm hover:bg-slate-50 transition-all">
+                                <i class="fa-solid fa-arrow-left mr-2"></i> Vissza
+                            </button>
+                            <button type="submit" class="px-8 py-3.5 rounded-xl bg-brand-600 text-white font-semibold text-sm hover:bg-brand-700 transition-all shadow-lg shadow-brand-600/30 flex items-center">
+                                <i class="fa-regular fa-calendar-check mr-2 text-lg"></i> Foglalás véglegesítése
+                            </button>
+                        </div>
+                    </div>
+
+                </form>
+
+                <!-- Success State (Hidden by Default) -->
+                <div id="success-screen" class="hidden text-center py-8 space-y-6">
+                    <div class="w-20 h-20 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-4xl mx-auto shadow-lg shadow-emerald-500/20">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div class="space-y-2">
+                        <h3 class="text-2xl font-extrabold text-slate-900">Sikeres időpontfoglalás!</h3>
+                        <p class="text-slate-600 max-w-md mx-auto text-sm">
+                            Köszönjük jelentkezését, <span id="summary-name" class="font-bold text-slate-900"></span>! Rögzítettük foglalását a szobi rendelőnkbe.
+                        </p>
+                    </div>
+                    <div class="max-w-md mx-auto bg-white rounded-2xl p-5 border border-slate-200 text-left space-y-2.5 text-sm shadow-sm">
+                        <div class="flex justify-between border-b border-slate-100 pb-2">
+                            <span class="text-slate-500">Kezelés:</span>
+                            <span id="summary-service" class="font-bold text-brand-600"></span>
+                        </div>
+                        <div class="flex justify-between border-b border-slate-100 pb-2">
+                            <span class="text-slate-500">Időpont:</span>
+                            <span id="summary-datetime" class="font-bold text-slate-900"></span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-slate-500">Helyszín:</span>
+                            <span class="font-semibold text-slate-800">2630 Szob, Fő utca 12.</span>
+                        </div>
+                    </div>
+                    <div class="pt-2">
+                        <button onclick="resetBookingForm()" class="px-8 py-3.5 rounded-xl bg-slate-900 text-white font-semibold text-sm hover:bg-brand-600 transition-all shadow-md">
+                            Új időpont foglalása
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Contact Section -->
+    <section id="elerhetoseg" class="py-24 bg-gradient-to-b from-white to-slate-50 border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-600 text-sm font-bold uppercase tracking-wider mb-2 block">Hol talál meg minket?</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Elérhetőségek & Nyitvatartás</h2>
+                <p class="text-slate-600 mt-3 text-base">Látogasson el szobi rendelőnkbe vagy vegye fel velünk a kapcsolatot telefonon.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- Info Card 1: Address -->
+                <div class="bg-white rounded-3xl p-8 border border-slate-100 shadow-xl space-y-4">
+                    <div class="w-12 h-12 rounded-2xl bg-brand-100 text-brand-600 flex items-center justify-center text-xl">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900">Címünk</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        2630 Szob, Fő utca 12.<br>
+                        <span class="text-xs text-slate-400 block mt-1">Könnyen megközelíthető helyszín parkolási lehetőséggel.</span>
+                    </p>
+                </div>
+
+                <!-- Info Card 2: Contact -->
+                <div class="bg-white rounded-3xl p-8 border border-slate-100 shadow-xl space-y-4">
+                    <div class="w-12 h-12 rounded-2xl bg-brand-100 text-brand-600 flex items-center justify-center text-xl">
+                        <i class="fa-solid fa-phone-volume"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900">Kapcsolat</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Telefon: <a href="tel:+36301234567" class="font-semibold text-brand-600 hover:underline">+36 30 123 4567</a><br>
+                        E-mail: <a href="mailto:info@teglasfogaszat.hu" class="font-semibold text-brand-600 hover:underline">info@teglasfogaszat.hu</a>
+                    </p>
+                </div>
+
+                <!-- Info Card 3: Hours -->
+                <div class="bg-white rounded-3xl p-8 border border-slate-100 shadow-xl space-y-4">
+                    <div class="w-12 h-12 rounded-2xl bg-brand-100 text-brand-600 flex items-center justify-center text-xl">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900">Nyitvatartás</h3>
+                    <div class="text-slate-600 text-sm space-y-1">
+                        <div class="flex justify-between"><span>Hétfő - Csütörtök:</span> <span class="font-semibold text-slate-900">08:00 - 17:00</span></div>
+                        <div class="flex justify-between"><span>Péntek:</span> <span class="font-semibold text-slate-900">08:00 - 14:00</span></div>
+                        <div class="flex justify-between"><span>Szombat - Vasárnap:</span> <span class="font-semibold text-brand-600">Zárva</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stylized Map Illustration / Card -->
+            <div class="mt-12 bg-brand-900 rounded-3xl overflow-hidden shadow-2xl relative p-8 sm:p-12 text-white flex flex-col md:flex-row items-center justify-between gap-8">
+                <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none"></div>
+                <div class="space-y-3 relative z-10">
+                    <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-800 text-brand-200 text-xs font-semibold uppercase tracking-wider">
+                        <i class="fa-solid fa-map-pin"></i> Szobi rendelő
+                    </span>
+                    <h3 class="text-2xl sm:text-3xl font-bold tracking-tight">Készen áll a tökéletes mosolyra?</h3>
+                    <p class="text-brand-200 text-sm max-w-xl">Látogasson el hozzánk Szobon, vagy foglaljon időpontot online néhány kattintással.</p>
+                </div>
+                <div class="relative z-10 shrink-0">
+                    <a href="#idopont" class="inline-flex items-center justify-center px-8 py-4 rounded-2xl bg-white text-brand-900 font-bold text-sm shadow-xl hover:bg-brand-50 transition-all transform hover:-translate-y-0.5">
+                        <i class="fa-regular fa-calendar-days mr-2"></i> Időpontfoglalás most
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-brand-600 text-white flex items-center justify-center shadow-md">
+                    <i class="fa-solid fa-tooth text-lg"></i>
+                </div>
+                <div>
+                    <span class="block font-bold text-white text-base">Téglás Levente Fogászat</span>
+                    <span class="block text-xs text-slate-500">Minden jog fenntartva © 2026</span>
+                </div>
+            </div>
+            <div class="flex items-center gap-6 text-sm">
+                <a href="#szolgaltatasok" class="hover:text-white transition-colors">Szolgáltatások</a>
+                <a href="#rolunk" class="hover:text-white transition-colors">Rólunk</a>
+                <a href="#elerhetoseg" class="hover:text-white transition-colors">Elérhetőség</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Interactive Logic -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on link click
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Set min date for date picker to today
+        const todayStr = new Date().toISOString().split('T')[0];
+        const dateInput = document.getElementById('booking-date');
+        if (dateInput) {
+            dateInput.min = todayStr;
+            dateInput.value = todayStr;
+        }
+
+        // Preselect service from service cards
+        function preselectService(serviceName) {
+            const radios = document.querySelectorAll('input[name="service"]');
+            radios.forEach(r => {
+                if (r.value === serviceName) {
+                    r.checked = true;
+                }
+            });
+            prevStep(1);
+        }
+
+        // Multi-step booking logic
+        function nextStep(step) {
+            // Validation for step 1 if moving to step 2
+            if (step === 2) {
+                const selectedService = document.querySelector('input[name="service"]:checked');
+                if (!selectedService) {
+                    showCustomMessage("Kérjük, válasszon ki egy kezeléstípust!");
+                    return;
+                }
+            }
+
+            // Validation for step 2 if moving to step 3
+            if (step === 3) {
+                const dateVal = document.getElementById('booking-date').value;
+                const timeSlot = document.querySelector('input[name="timeslot"]:checked');
+                if (!dateVal || !timeSlot) {
+                    showCustomMessage("Kérjük, válasszon dátumot és egy szabad idősávot!");
+                    return;
+                }
+            }
+
+            // Hide all steps
+            document.getElementById('step-1-content').classList.add('hidden');
+            document.getElementById('step-2-content').classList.add('hidden');
+            document.getElementById('step-3-content').classList.add('hidden');
+
+            // Show target step
+            document.getElementById(`step-${step}-content`).classList.remove('hidden');
+
+            // Update step indicators
+            updateIndicators(step);
+        }
+
+        function prevStep(step) {
+            document.getElementById('step-1-content').classList.add('hidden');
+            document.getElementById('step-2-content').classList.add('hidden');
+            document.getElementById('step-3-content').classList.add('hidden');
+
+            document.getElementById(`step-${step}-content`).classList.remove('hidden');
+            updateIndicators(step);
+        }
+
+        function updateIndicators(currentStep) {
+            for (let i = 1; i <= 3; i++) {
+                const indicator = document.getElementById(`step-indicator-${i}`);
+                if (i < currentStep) {
+                    indicator.className = "w-8 h-8 rounded-full bg-emerald-600 text-white flex items-center justify-center font-bold text-xs";
+                    indicator.innerHTML = '<i class="fa-solid fa-check"></i>';
+                } else if (i === currentStep) {
+                    indicator.className = "w-8 h-8 rounded-full bg-brand-600 text-white flex items-center justify-center font-bold text-xs";
+                    indicator.innerText = i;
+                } else {
+                    indicator.className = "w-8 h-8 rounded-full bg-slate-200 text-slate-600 flex items-center justify-center font-bold text-xs";
+                    indicator.innerText = i;
+                }
+            }
+        }
+
+        // Handle Booking Submission
+        function handleBookingSubmit(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('patient-name').value;
+            const email = document.getElementById('patient-email').value;
+            const phone = document.getElementById('patient-phone').value;
+            const dateVal = document.getElementById('booking-date').value;
+            const timeSlotEl = document.querySelector('input[name="timeslot"]:checked');
+            const selectedService = document.querySelector('input[name="service"]:checked').value;
+
+            if (!name || !email || !phone || !dateVal || !timeSlotEl) {
+                showCustomMessage("Kérjük, töltsön ki minden kötelező mezőt!");
+                return;
+            }
+
+            // Populate success screen details
+            document.getElementById('summary-name').innerText = name;
+            document.getElementById('summary-service').innerText = selectedService;
+            document.getElementById('summary-datetime').innerText = `${dateVal} (${timeSlotEl.value})`;
+
+            // Hide step 3 and show success
+            document.getElementById('step-3-content').classList.add('hidden');
+            document.getElementById('success-screen').classList.remove('hidden');
+
+            // Reset indicators to completed look
+            for (let i = 1; i <= 3; i++) {
+                const indicator = document.getElementById(`step-indicator-${i}`);
+                indicator.className = "w-8 h-8 rounded-full bg-emerald-600 text-white flex items-center justify-center font-bold text-xs";
+                indicator.innerHTML = '<i class="fa-solid fa-check"></i>';
+            }
+        }
+
+        function resetBookingForm() {
+            document.getElementById('booking-form').reset();
+            document.getElementById('success-screen').classList.add('hidden');
+            document.getElementById('step-1-content').classList.remove('hidden');
+            dateInput.value = todayStr;
+            updateIndicators(1);
+        }
+
+        // Custom Notification box instead of alert()
+        function showCustomMessage(msg) {
+            const existingModal = document.getElementById('custom-alert-modal');
+            if (existingModal) existingModal.remove();
+
+            const modal = document.createElement('div');
+            modal.id = 'custom-alert-modal';
+            modal.className = 'fixed inset-0 z-50 flex items-center justify-center bg-slate-900/50 backdrop-blur-sm p-4';
+            modal.innerHTML = `
+                <div class="bg-white rounded-2xl p-6 max-w-sm w-full shadow-2xl text-center space-y-4 border border-slate-100">
+                    <div class="w-12 h-12 rounded-full bg-brand-100 text-brand-600 flex items-center justify-center text-xl mx-auto">
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                    </div>
+                    <h4 class="font-bold text-slate-900 text-lg">Figyelem</h4>
+                    <p class="text-slate-600 text-sm">${msg}</p>
+                    <button onclick="document.getElementById('custom-alert-modal').remove()" class="w-full py-2.5 rounded-xl bg-brand-600 text-white font-semibold text-sm hover:bg-brand-700 transition-all shadow-md">
+                        Értettem
+                    </button>
+                </div>
+            `;
+            document.body.appendChild(modal);
+        }
+    </script>
+</body>
+</html>
